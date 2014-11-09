@@ -40,6 +40,10 @@ body {
 	display: inline;
 }
 
+.explain p{
+	display: none;
+}
+
 #article { 
 	height: 180px; 
 	margin: 10px 0; 

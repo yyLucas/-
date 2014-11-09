@@ -11,19 +11,26 @@
     <script type="text/javascript">
         function Slider(){
             $(".slider #1").show("fade",500);
+            $(".explain #4").show("fade",500);
             $(".slider #1").delay(3000).hide("slide",{direction: "left"},500);
+            $(".explain #4").delay(3000).hide("slide",{direction: "left"},500);
 
             var sc = $(".slider img").size();
-            var count = 2;
+            var count_img = 2;
+            var count_text = 5;
             
             setInterval(function (){
-                $(".slider #"+count).show("slide",{direction: "right"},500);
-                $(".slider #"+count).delay(3000).hide("slide",{direction: "left"}, 500);
+                $(".slider #"+count_img).show("slide",{direction: "right"},500);
+                $(".explain #"+count_text).show("slide",{direction: "right"},500);
+                $(".slider #"+count_img).delay(3000).hide("slide",{direction: "left"}, 500);
+                $(".explain #"+count_text).delay(3000).hide("slide",{direction: "left"}, 500);
 
-                if(count == sc){
-                    count = 1;
+                if(count_img == sc){
+                    count_img = 1;
+                    count_text = 4;
                 }else{
-                    count = count + 1;
+                    count_img = count_img + 1;
+                    count_text = count_text + 1;
                 }
 
             },4000);
@@ -49,7 +56,9 @@
         </div>
 
         <div class="explain">
-            <p>文章内容</p>
+            <p id="4">文章内容1</p>
+            <p id="5">文章内容2</p>
+            <p id="6">文章内容3</p>
         </div>
 
     </div>
