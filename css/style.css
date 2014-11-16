@@ -69,10 +69,11 @@ body {
 #footer ul {
     list-style-type: none;
     float: left;
+    padding: 0;
 }
 
 #footer li {
-	padding: 0 100px;
+	padding: 0 60px;
 	border-right: dotted;
 }
 
