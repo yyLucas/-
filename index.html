@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDSnVDLe2i_3BLBrY3lxBPtoKGR-AG6tlo&sensor=false">
+    </script>
+
     <script type="text/javascript">
+        
         function Slider(){
             $(".slider #1").show("fade",500);
             $(".explain #4").show("fade",500);
@@ -35,7 +39,30 @@
 
             },4000);
         }
+        
+        
+         function initialize() {
+                var mapOptions = {
+                  center: { lat: -36.955838, lng:174.890511},
+                  zoom: 17,
+                     disableDefaultUI: true
+                };
+                var map = new google.maps.Map(document.getElementById('map'),
+                    mapOptions);
+//                var image = '/images/marker.png';
+                var myLatLng = new google.maps.LatLng(-36.955838, 174.890511);
+                var beachMarker = new google.maps.Marker({
+                  position: myLatLng,
+                  map: map,
+//                  icon: image
+                });
+                }
+            
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+
     </script>
+    <script src="http://use.edgefonts.net/kameron:n7,n4:all.js"></script>
 	<title> 龙腾装饰 </title>
 
 
@@ -46,51 +73,63 @@
 	<div id="logo">
         <img src="css/images/logo.gif"/>
     </div>
+    <div class="container" >
 
+        <div id="main">
+            <div class="slider">
+                <img id="1" src="img/slider1.jpg"/>
+                <img id="2" src="img/slider2.jpg"/> 
+                 
+                <img id="3" src="img/slider3.jpg"/>
+            
+            </div>
 
-    <div id="main">
-        <div class="slider">
-            <img id="1" src="css/images/fullimage1.jpg"/>
-            <img id="2" src="css/images/fullimage2.jpg"/>
-            <img id="3" src="css/images/fullimage3.jpg"/>
+            <div class="explain">
+                <p id="4">文章内容1</p>
+                <p id="5">文章内容2</p>
+                <p id="6">文章内容3</p>
+            </div>
+
         </div>
 
-        <div class="explain">
-            <p id="4">文章内容1</p>
-            <p id="5">文章内容2</p>
-            <p id="6">文章内容3</p>
+        <div id="article">
+            <div class="container">
+                <p>专业经销及安装UPVC屋顶装饰板，粉刷适用于厨房、卫浴及装饰板，
+                  <br>产品美观时尚，防潮防霉，安全免漆。
+                   
+              
+                   <br> 专业团队，价格公道合理，免费上门报价。</p>
+                         <strong>另外承接：旧房翻新、厨房卫浴安装、室内外油漆等各种装修及维护工程。</strong>
+            </div>
         </div>
 
-    </div>
+        <div id="footer">
+            <div class="footer_container">
+                <ul>
+                    <li>龙腾装饰 Todd Zhou</li>
+                    <li>1A Birmingham Road, East Tamaki, Auckland</li>
+                    <li>P.O. BOX 258070, Botany 2153, Auckland</li>
+                </ul>
+                <ul>
+                    <li>Ph: (09) 274 3344</li>
+                    <li>Mobile: 022 6672 944</li>
+                </ul>
+                <ul>
+                    <li>Fax: (09) 274 6677</li>
+                    <li>Email: toddzzq@hotmail.com</li>
+                </ul>
+                   <div id="map">
+                
+                </div>
 
-    <div id="article">
-        <div class="container">
-            <p>专业经销及安装UPVC屋顶，粉刷适用于厨房、卫浴及装饰板，产品美观时尚，防潮防霉，安全免漆。</br>另外承接：旧房翻新、厨房卫浴安装、室内外油漆等各种装修及维护工程。</br>
-                专业团队，价格公道合理，免费上门报价。</p>
+            </div>   
+            
+         
+            <div id="copyright">
+                <div class="left">龙腾装饰&copy;2014</div>    <div class="right">site by<em> <a href="">sOm2y</a></em></div> 
+            </div>    
+
         </div>
-    </div>
-
-    <div id="footer">
-        <div class="footer_container">
-            <ul>
-                <li>龙腾装饰 Todd Zhou</li>
-                <li>1A Birmingham Road, East Tamaki, Auckland</li>
-                <li>P.O. BOX 258070, Botany 2153, Auckland</li>
-            </ul>
-            <ul>
-                <li>Ph: (09) 274 3344</li>
-                <li>Mobile: 022 6672 944</li>
-            </ul>
-            <ul>
-                <li>Fax: (09) 274 6677</li>
-                <li>Email: toddzzq@hotmail.com</li>
-            </ul>
-
-        </div>   
-        <div id="copyright">
-            All rights reserved. Designed by Sam Yin and Lucas Zhang.
-        </div>    
-
     </div>
 
 </body>
