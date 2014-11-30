@@ -1,3 +1,24 @@
+<?php 
+if(isset($_POST['submit'])){
+    $to = "toddzzq@hotmail.com"; // this is your Email address
+    $header = $_POST['email']; // this is the sender's Email address
+    $name = $_POST['name'];
+    $message = $_POST['message'];
+  
+
+//    $headers = "From:" . $from;
+//    $headers2 = "From:" . $to;
+    mail($to,$name,$message,$header);
+//    mail($from,$name,$message); // sends a copy of the message to the sender
+//    echo "Mail Sent. Thank you " . $name . ", we will contact you shortly.";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    }
+?>
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="cn">
   <head>
@@ -101,11 +122,51 @@
             <div class="row">
               <div class="col-md-8 col-md-offset-2 wp1">
                 <h1 class="arrow">产品美观时尚，防潮防霉，安全免漆，特别适用于厨房、卫浴</h1>
-                <p>Sed a lorem quis neque interdum <a href="#">consequat ut sed sem</a>. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent id tempor ipsum. Fusce at massa ac nunc porta fringilla sed eget neque. Quisque quis pretium nulla. Fusce eget bibendum neque, vel volutpat augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                
+               
               </div>
             </div>
+            
+          
           </div>
         </section>
+        
+           <section>
+                 <div class="container">
+                     <div class="row">
+                  <center> <h1 class="arrow">产品使用前后</h1></center>
+                <div class="flexslider">
+                  <ul class="slides">
+                    <li>
+                      <img src="img/mould.jpg" />
+                    </li>
+                     <li>
+                     <img src="img/new-1.jpg" alt="">
+                    </li>
+                    <li>
+                       <img src="img/pvc%20ceiling%20panel-1.jpg" />
+                    </li>
+                   
+                    <li>
+                       <img src="img/pvc%20ceiling%20panel-2.jpg" alt="">
+                    </li>
+                     <li>
+                       <img src="img/pvc%20ceilingpanel-2.jpg" />
+                    </li>
+                      <li>
+                       <img src="img/new-2.jpg" alt="">
+                    </li>
+                   
+                    <!-- items mirrored twice, total of 12 -->
+                  </ul>
+                </div>
+            </div>
+                
+                </div>
+                 
+        </section>
+        
+        
         <section class="features text-center section-padding" id="features">
           <div class="container">
             <div class="row">
@@ -117,16 +178,14 @@
                       <img src="img/marketing.jpg" alt="">
                     </div>
                     <h2>经销PVC屋顶装饰板</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum
-                    primis in faucibus.</p>
+                    
                   </div>
                   <div class="col-md-4 wp2 delay-05s">
                     <div class="icon">
                      <img src="img/assembling.jpg" alt="">
                     </div>
                     <h2>安装PVC屋顶装饰板</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum
-                    primis in faucibus.</p>
+                  
                   </div>
                   <div class="col-md-4 wp2 delay-1s">
                     <div class="icon">
@@ -389,7 +448,7 @@
         <section class="subscribe text-center">
           <div class="container">
             <h1><i class="fa fa-paper-plane"></i><span>和我们保持联系</span></h1>
-            <form action="#">
+            <form action="#" method="post">
               <input style="margin-bottom:10px;" type="text" name="" value="" placeholder="您的姓名" required><br>
               <input style="margin-bottom:10px;" type="text" name="" value="" placeholder="您的邮箱地址" required><br>
               <textarea style="margin-bottom:10px;" type="text" name="" value="" placeholder="Your Message" required>

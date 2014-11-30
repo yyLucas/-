@@ -106,6 +106,16 @@ $(document).ready(function(){
 /***************** Flexsliders ******************/
 
 $(window).load(function() {
+    
+      $('.flexslider').flexslider({
+        animation: "slide",
+        animationLoop: false,
+        itemWidth: 520,
+        itemMargin: 0,
+        controlNav: false,   
+        minItems: 2,
+        maxItems: 2
+      });
 
 	$('#portfolioSlider').flexslider({
 		animation: "slide",
@@ -141,3 +151,5 @@ $(window).load(function() {
 	});
 
 });
+
+

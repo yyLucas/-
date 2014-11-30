@@ -1,16 +1,16 @@
 <?php 
 if(isset($_POST['submit'])){
-    $to = "samyin1990@gmail.com"; // this is your Email address
-    $from = $_POST['email']; // this is the sender's Email address
+    $to = "toddzzq@hotmail.com"; // this is your Email address
+    $header = $_POST['email']; // this is the sender's Email address
     $name = $_POST['name'];
     $message = $_POST['message'];
   
 
-    $headers = "From:" . $from;
-    $headers2 = "From:" . $to;
-    mail($to,$name,$message);
+//    $headers = "From:" . $from;
+//    $headers2 = "From:" . $to;
+    mail($to,$name,$message,$header);
 //    mail($from,$name,$message); // sends a copy of the message to the sender
-    echo "Mail Sent. Thank you " . $name . ", we will contact you shortly.";
+//    echo "Mail Sent. Thank you " . $name . ", we will contact you shortly.";
     // You can also use header('Location: thank_you.php'); to redirect to another page.
     }
 ?>
@@ -105,7 +105,7 @@ if(isset($_POST['submit'])){
               </div>
               <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center inner">
-                  <h1 class="animated fadeInDown title"><span>L & T</span> <br> renovation</h1>
+                  <h1 class="animated fadeInDown title"><span> L & T</span> <br>renovation</h1>
                   <p class="animated fadeInUp delay-05s">Professional marketing and assembling PVC decoration ceiling panel</p>
                 </div>
               </div>
@@ -124,9 +124,48 @@ if(isset($_POST['submit'])){
                 <h1 class="arrow">
                 elegant and fashion</h1>
                 <p> moistureproof and mouldproof, safe and no painting required, especially suitable for Kitchen and Bathroom.</p>
+            
+                
               </div>
             </div>
+            
+      
           </div>
+        </section>
+        
+        
+         <section>
+           <div class="container">
+                   <div class="row">
+                 <center>  <h1 class="arrow">Before and after the product use</h1></center>
+                <div class="flexslider">
+                  <ul class="slides">
+                    <li>
+                      <img src="img/mould.jpg" />
+                    </li>
+                     <li>
+                     <img src="img/new-1.jpg" alt="">
+                    </li>
+                    <li>
+                       <img src="img/pvc%20ceiling%20panel-1.jpg" />
+                    </li>
+                   
+                    <li>
+                       <img src="img/pvc%20ceiling%20panel-2.jpg" alt="">
+                    </li>
+                     <li>
+                       <img src="img/pvc%20ceilingpanel-2.jpg" />
+                    </li>
+                      <li>
+                       <img src="img/new-2.jpg" alt="">
+                    </li>
+                   
+                    <!-- items mirrored twice, total of 12 -->
+                  </ul>
+                </div>
+            </div>
+           </div>
+        
         </section>
         <section class="features text-center section-padding" id="features">
           <div class="container">
@@ -139,16 +178,14 @@ if(isset($_POST['submit'])){
                      <img src="img/marketing.jpg" alt="">
                     </div>
                     <h2>Marketing PVC ceiling panel</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum
-                    primis in faucibus.</p>
+                   
                   </div>
                   <div class="col-md-4 wp2 delay-05s">
                     <div class="icon">
                    <img src="img/assembling.jpg" alt="">
                     </div>
                     <h2>Assembling PVC ceiling panel</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum
-                    primis in faucibus.</p>
+                    
                   </div>
                   <div class="col-md-4 wp2 delay-1s">
                     <div class="icon">
@@ -414,7 +451,7 @@ if(isset($_POST['submit'])){
         <section class="subscribe text-center">
           <div class="container">
             <h1><i class="fa fa-paper-plane"></i><span>keep in touch</span></h1>
-            <form  action="" method="post" enctype="text/plain">
+            <form  action="" method="post">
               <input style="margin-bottom:10px;" type="text" name="name" value="" placeholder="Your name" required><br>
               <input style="margin-bottom:10px;" type="text" name="email" value="" placeholder="Your email" required><br>
               <textarea style="margin-bottom:10px;" type="text" name="message" value="" placeholder="Your Message" required>
