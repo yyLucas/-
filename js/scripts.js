@@ -111,11 +111,18 @@ $(window).load(function() {
         animation: "slide",
         animationLoop: false,
         itemWidth: 520,
+<<<<<<< HEAD
         itemHeight:400,
         itemMargin: 0,
         controlNav: false,   
         minItems: 1,
         maxItems: 1
+=======
+        itemMargin: 0,
+        controlNav: false,   
+        minItems: 2,
+        maxItems: 2
+>>>>>>> origin/master
       });
 
 	$('#portfolioSlider').flexslider({

@@ -134,6 +134,7 @@ if(isset($_POST['submit'])){
            <section>
                  <div class="container">
                      <div class="row">
+<<<<<<< HEAD
                  <div class="col-sm-6">
                      
                       <img src="img/mould.jpg" />
@@ -143,6 +144,14 @@ if(isset($_POST['submit'])){
                       <div class="flexslider">
                   <ul class="slides">
                     
+=======
+                  <center> <h1 class="arrow">产品使用前后</h1></center>
+                <div class="flexslider">
+                  <ul class="slides">
+                    <li>
+                      <img src="img/mould.jpg" />
+                    </li>
+>>>>>>> origin/master
                      <li>
                      <img src="img/new-1.jpg" alt="">
                     </li>
@@ -163,8 +172,11 @@ if(isset($_POST['submit'])){
                     <!-- items mirrored twice, total of 12 -->
                   </ul>
                 </div>
+<<<<<<< HEAD
                  </div>
                
+=======
+>>>>>>> origin/master
             </div>
                 
                 </div>

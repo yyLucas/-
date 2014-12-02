@@ -105,8 +105,12 @@ if(isset($_POST['submit'])){
               </div>
               <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center inner">
+<<<<<<< HEAD
                   <h1 class="animated fadeInDown title"><span> L & T</span> </h1> 
                   <h1 class="animated fadeInDown title"> renovation</h1>
+=======
+                  <h1 class="animated fadeInDown title"><span> L & T</span> <br>renovation</h1>
+>>>>>>> origin/master
                   <p class="animated fadeInUp delay-05s">Professional marketing and assembling PVC decoration ceiling panel</p>
                 </div>
               </div>
@@ -139,6 +143,7 @@ if(isset($_POST['submit'])){
            <div class="container">
                    <div class="row">
                  <center>  <h1 class="arrow">Before and after the product use</h1></center>
+<<<<<<< HEAD
                  <div class="col-sm-6">
                      
                       <img src="img/mould.jpg" />
@@ -148,6 +153,13 @@ if(isset($_POST['submit'])){
                       <div class="flexslider">
                   <ul class="slides">
                     
+=======
+                <div class="flexslider">
+                  <ul class="slides">
+                    <li>
+                      <img src="img/mould.jpg" />
+                    </li>
+>>>>>>> origin/master
                      <li>
                      <img src="img/new-1.jpg" alt="">
                     </li>
@@ -168,8 +180,11 @@ if(isset($_POST['submit'])){
                     <!-- items mirrored twice, total of 12 -->
                   </ul>
                 </div>
+<<<<<<< HEAD
                  </div>
                
+=======
+>>>>>>> origin/master
             </div>
            </div>
         
