@@ -103,15 +103,13 @@ if(isset($_POST['submit'])){
                   <a id="nav-toggle" class="nav_slide_button" href="#"><span></span></a>
                 </div>
               </div>
+             
               <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center inner">
-<<<<<<< HEAD
+                    <center><img style="position:relative; left:-5px; margin-bottom:20px;" src="img/logo2-sm.png" class="img-responsive animated fadeInDown title" alt=""></center>
                   <h1 class="animated fadeInDown title"><span> L & T</span> </h1> 
                   <h1 class="animated fadeInDown title"> renovation</h1>
-=======
-                  <h1 class="animated fadeInDown title"><span> L & T</span> <br>renovation</h1>
->>>>>>> origin/master
-                  <p class="animated fadeInUp delay-05s">Professional marketing and assembling PVC decoration ceiling panel</p>
+
                 </div>
               </div>
               <div class="row">
@@ -124,7 +122,11 @@ if(isset($_POST['submit'])){
         </header>
         <section class="intro text-center section-padding" id="intro">
           <div class="container">
+           <div class="row">
+              
+           </div>
             <div class="row">
+           
               <div class="col-md-8 col-md-offset-2 wp1">
                 <h1 class="arrow">
                 elegant and fashion</h1>
@@ -143,48 +145,40 @@ if(isset($_POST['submit'])){
            <div class="container">
                    <div class="row">
                  <center>  <h1 class="arrow">Before and after the product use</h1></center>
-<<<<<<< HEAD
+
                  <div class="col-sm-6">
                      
-                      <img src="img/mould.jpg" />
+                      <img class="img-responsive" src="img/mould.jpg" />
                     
                  </div>
                  <div class="col-sm-6">
                       <div class="flexslider">
-                  <ul class="slides">
-                    
-=======
-                <div class="flexslider">
-                  <ul class="slides">
-                    <li>
-                      <img src="img/mould.jpg" />
-                    </li>
->>>>>>> origin/master
-                     <li>
-                     <img src="img/new-1.jpg" alt="">
-                    </li>
-                    <li>
-                       <img src="img/pvc%20ceiling%20panel-1.jpg" />
-                    </li>
-                   
-                    <li>
-                       <img src="img/pvc%20ceiling%20panel-2.jpg" alt="">
-                    </li>
-                     <li>
-                       <img src="img/pvc%20ceilingpanel-2.jpg" />
-                    </li>
-                      <li>
-                       <img src="img/new-2.jpg" alt="">
-                    </li>
-                   
-                    <!-- items mirrored twice, total of 12 -->
-                  </ul>
-                </div>
-<<<<<<< HEAD
+                      <ul class="slides">
+
+
+                         <li>
+                         <img src="img/new-1.jpg" alt="">
+                        </li>
+                        <li>
+                           <img src="img/pvc%20ceiling%20panel-1.jpg" />
+                        </li>
+
+                        <li>
+                           <img src="img/pvc%20ceiling%20panel-2.jpg" alt="">
+                        </li>
+                         <li>
+                           <img src="img/pvc%20ceilingpanel-2.jpg" />
+                        </li>
+                          <li>
+                           <img src="img/new-2.jpg" alt="">
+                        </li>
+
+                        <!-- items mirrored twice, total of 12 -->
+                      </ul>
+                    </div>
+
                  </div>
-               
-=======
->>>>>>> origin/master
+
             </div>
            </div>
         
@@ -494,7 +488,7 @@ if(isset($_POST['submit'])){
               <div class="col-md-4">
                 <div class="light-box box-hover">
                   <h2><i class="fa fa-map-marker"></i><span>address</span></h2>
-                  <p>1A Birmingham Road, East Tamaki, Aucklnad <br>
+                  <p>1A Birmingham Road, East Tamaki, Auckland <br>
                       P.O.Box 258070. Botany 2163, Auckland
                   </p>
                 </div>

@@ -104,7 +104,9 @@ if(isset($_POST['submit'])){
                 </div>
               </div>
               <div class="row">
+               
                 <div class="col-md-8 col-md-offset-2 text-center inner">
+                     <center><img style="position:relative; left:-5px; margin-bottom:40px;"  src="img/logo2-sm.png" class="img-responsive animated fadeInDown title" alt=""></center>
                   <h1 class="animated fadeInDown" style="font-family:'lishu';font-size:10.2em;"><span >龙腾</span>装饰</h1>
                   <p class="animated fadeInUp delay-05s">专业营销及安装PVC屋顶装饰板</p>
                 </div>
@@ -132,54 +134,51 @@ if(isset($_POST['submit'])){
         </section>
         
            <section>
+                
                  <div class="container">
+                      <center> <h1 class="arrow">产品使用前后</h1></center>
                      <div class="row">
-<<<<<<< HEAD
-                 <div class="col-sm-6">
-                     
-                      <img src="img/mould.jpg" />
-                    
-                 </div>
-                 <div class="col-sm-6">
-                      <div class="flexslider">
-                  <ul class="slides">
-                    
-=======
-                  <center> <h1 class="arrow">产品使用前后</h1></center>
-                <div class="flexslider">
-                  <ul class="slides">
-                    <li>
-                      <img src="img/mould.jpg" />
-                    </li>
->>>>>>> origin/master
-                     <li>
-                     <img src="img/new-1.jpg" alt="">
-                    </li>
-                    <li>
-                       <img src="img/pvc%20ceiling%20panel-1.jpg" />
-                    </li>
-                   
-                    <li>
-                       <img src="img/pvc%20ceiling%20panel-2.jpg" alt="">
-                    </li>
-                     <li>
-                       <img src="img/pvc%20ceilingpanel-2.jpg" />
-                    </li>
-                      <li>
-                       <img src="img/new-2.jpg" alt="">
-                    </li>
-                   
-                    <!-- items mirrored twice, total of 12 -->
-                  </ul>
-                </div>
-<<<<<<< HEAD
+
+                     <div class="col-sm-6">
+
+                          <img class="img-responsive" src="img/mould.jpg" />
+
+                     </div>
+                
+                    <div class="col-sm-6">
+                        <div class="flexslider">
+                          <ul class="slides">
+                      
+
+                             <li>
+                             <img src="img/new-1.jpg" alt="">
+                            </li>
+                            <li>
+                               <img src="img/pvc%20ceiling%20panel-1.jpg" />
+                            </li>
+
+                            <li>
+                               <img src="img/pvc%20ceiling%20panel-2.jpg" alt="">
+                            </li>
+                             <li>
+                               <img src="img/pvc%20ceilingpanel-2.jpg" />
+                            </li>
+                              <li>
+                               <img src="img/new-2.jpg" alt="">
+                            </li>
+
+                            <!-- items mirrored twice, total of 12 -->
+                          </ul>
+                    </div>
+
+                    </div>
+             
                  </div>
                
-=======
->>>>>>> origin/master
+
             </div>
                 
-                </div>
+               
                  
         </section>
         
@@ -486,7 +485,7 @@ if(isset($_POST['submit'])){
               <div class="col-md-4">
                 <div class="light-box box-hover">
                   <h2><i class="fa fa-map-marker"></i><span>地址</span></h2>
-                  <p>1A Birmingham Road, East Tamaki, Aucklnad <br>
+                  <p>1A Birmingham Road, East Tamaki, Auckland <br>
                       P.O.Box 258070. Botany 2163, Auckland
                   </p>
                 </div>
